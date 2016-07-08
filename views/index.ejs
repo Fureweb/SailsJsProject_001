@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="memoApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MEMO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/common.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <div class="container">
+      <h2 ui-sref="list">MEMO APP</h2>
+      <hr>
+      <div ui-view></div>
+    </div>
+
+    <script src="/libs/jquery-2.2.4.js" charset="utf-8"></script>
+    <script src="/libs/angular.js" charset="utf-8"></script>
+    <script src="/libs/angular-ui-router.js" charset="utf-8"></script>
+    <script src="/apps/app.js" charset="utf-8"></script>
+    <script src="/apps/configs/memoConfig.js" charset="utf-8"></script>
+    <script src="/apps/controllers/memoListController.js" charset="utf-8"></script>
+    <script src="/apps/controllers/memoWriteController.js" charset="utf-8"></script>
+    <script src="/apps/controllers/memoViewController.js" charset="utf-8"></script>
+    <script src="/apps/controllers/memoModifyController.js" charset="utf-8"></script>
+    <script src="/apps/services/storage.js" charset="utf-8"></script>
+  </body>
+</html>

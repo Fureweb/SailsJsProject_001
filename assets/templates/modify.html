@@ -1,0 +1,12 @@
+<div class="btn-group-wrap" ng-controller="memoModifyController">
+  <h3>메모 수정</h3>
+  <hr class="hr5">
+  <textarea ng-model="content" class="form-control"></textarea>
+  <input type="hidden" ng-model="memoId">
+  <hr>
+  <div class="btn-group">
+    <!-- angular context에 들어있는 key를 넘긴다. -->
+    <span class="btn btn-info" ng-click="modifyProcess(memoId, content)">수정</span>
+    <span class="btn btn-default" ui-sref="list">목록으로</span>
+  </div>
+</div>

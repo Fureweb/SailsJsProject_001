@@ -1,0 +1,10 @@
+<div class="btn-group-wrap" ng-controller="memoWriteController">
+  <h3>새 메모 작성</h3>
+  <hr class="hr5">
+  <textarea ng-model="writeMemo" class="form-control"></textarea>
+  <hr>
+  <div class="btn-group">
+    <span class="btn btn-success" ng-click="write(writeMemo)">등록</span>
+    <span class="btn btn-default" ui-sref="list">목록으로</span>
+  </div>
+</div>
